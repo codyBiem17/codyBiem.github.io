@@ -1,0 +1,130 @@
+header {
+  -webkit-box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+  -moz-box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+  box-shadow: 0 5px 15px 0 rgba(46, 61, 73, 0.12);
+  /* border: 1px solid red; */
+  padding: 25px 0;
+}
+
+#logo-div {
+  /* border: 1px solid blue; */
+  /* width: 50%;
+    margin: 0 auto; */
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  border: 1px solid #dbe2e8;
+  border-radius: 2px;
+  -webkit-box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.06);
+  box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.06);
+}
+
+div.access a {
+  font-weight: 600;
+  color: #5b6770;
+  /* border: 1px solid red; */
+}
+.access a:hover {
+  text-decoration: none;
+  color: #5b6770;
+}
+
+div#signin{
+  border-left: 1px solid #dbe2e8;
+  border-bottom: 1px solid #dbe2e8;
+  background: #fafbfc;
+  transition: box-shadow 0.05s linear;
+  /* width: 100px; */
+  /* padding: 15px; */
+  /* box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1); */
+}
+
+div#signin a{
+    color: #7d97ad;
+}
+
+div#signin:hover{
+    background-color: white;
+    box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1);
+}
+
+#create-account {
+  font-size: 34px;
+  color: #5b6770;
+}
+
+.sub-text {
+  color: #848b92;
+}
+
+button[type="button"] {
+  background-color: white;
+  box-shadow: 1px 2px 3px 3px rgba(0, 0, 0, 0.04);
+  color: #757c81;
+  font-size: 14px;
+  font-weight: 600;
+  transition: box-shadow 0.05s ease-in-out;
+}
+
+button[type="button"]:hover {
+  -webkit-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.45);
+  box-shadow: 10px 10px 5px -8px rgba(0, 0, 0, 0.45);
+}
+
+input[type="text"] {
+  border: 1px solid #96a0aa;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #a6aeb7;
+  font-size: 14px;
+  font-weight: 600;
+}
+:-ms-input-placeholder {
+  /* Internet Explorer */
+  color: #a6aeb7;
+  font-size: 14px;
+  font-weight: 600;
+}
+::placeholder {
+  color: #a6aeb7;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.agreement {
+  font-size: 15px;
+  text-align: left;
+}
+a.terms-privacy {
+  color: #66d1ef;
+  font-weight: 600;
+}
+
+a.terms-privacy:hover {
+  color: black;
+  text-decoration: none;
+}
+
+button[type="submit"] {
+  background-color: #02b3e4;
+  /* box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.04);
+    color: #e4f7fc; */
+  box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+button[type="submit"]:hover {
+  background-color: #028bb1;
+}
+
