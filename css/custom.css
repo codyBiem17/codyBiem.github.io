@@ -25,34 +25,34 @@ form {
   box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.06);
 }
 
-div.access a {
-  font-weight: 600;
-  color: #5b6770;
-  /* border: 1px solid red; */
+.nav-link{
+  color: #7d97ad;
+  font-weight: 500;
 }
-.access a:hover {
-  text-decoration: none;
+
+.nav-link.active {
   color: #5b6770;
 }
 
-div#signin{
+.nav-link:hover{
+  color: #7d97ad;
+}
+
+li .nav-link:not(.active){
   border-left: 1px solid #dbe2e8;
   border-bottom: 1px solid #dbe2e8;
   background: #fafbfc;
   transition: box-shadow 0.05s linear;
-  /* width: 100px; */
-  /* padding: 15px; */
-  /* box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1); */
 }
 
-div#signin a{
-    color: #7d97ad;
+li.nav-item.active{
+  background: red;
 }
-
-div#signin:hover{
+/* 
+li.nav-item:not(.active):hover{
     background-color: white;
     box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1);
-}
+} */
 
 #create-account {
   font-size: 34px;
