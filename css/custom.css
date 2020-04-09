@@ -38,15 +38,15 @@ form {
   color: #7d97ad;
 }
 
-li .nav-link:not(.active){
-  border-left: 1px solid #dbe2e8;
+li .nav-item:not(.active){
+  /* border-left: 1px solid #dbe2e8;
   border-bottom: 1px solid #dbe2e8;
   background: #fafbfc;
-  transition: box-shadow 0.05s linear;
+  transition: box-shadow 0.05s linear; */
 }
 
 li.nav-item.active{
-  background: red;
+  /* background: red; */
 }
 /* 
 li.nav-item:not(.active):hover{
