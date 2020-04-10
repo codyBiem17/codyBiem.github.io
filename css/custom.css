@@ -6,12 +6,6 @@ header {
   padding: 25px 0;
 }
 
-#logo-div {
-  /* border: 1px solid blue; */
-  /* width: 50%;
-    margin: 0 auto; */
-}
-
 img {
   max-width: 100%;
   height: auto;
@@ -25,34 +19,38 @@ form {
   box-shadow: 6px 6px 3px -2px rgba(0, 0, 0, 0.06);
 }
 
-.nav-link{
+.form-tabs{
   color: #7d97ad;
   font-weight: 500;
 }
 
-.nav-link.active {
+.form-tabs.active {
   color: #5b6770;
 }
 
-.nav-link:hover{
+.form-tabs:hover{
   color: #7d97ad;
+  cursor: pointer;
 }
 
-li .nav-item:not(.active){
-  /* border-left: 1px solid #dbe2e8;
+#signin:not(.active){
+  border-left: 1px solid #dbe2e8;
   border-bottom: 1px solid #dbe2e8;
   background: #fafbfc;
-  transition: box-shadow 0.05s linear; */
+  transition: box-shadow 0.05s linear;
 }
 
-li.nav-item.active{
-  /* background: red; */
+#signup:not(.active){
+  border-right: 1px solid #dbe2e8;
+  border-bottom: 1px solid #dbe2e8;
+  background: #fafbfc;
+  transition: box-shadow 0.05s linear;
 }
-/* 
-li.nav-item:not(.active):hover{
+
+#signup:not(.active):hover, #signin:not(.active):hover{
     background-color: white;
     box-shadow: 2px 4px 8px 0 rgba(0,0,0,.1);
-} */
+}
 
 #create-account {
   font-size: 34px;
@@ -82,6 +80,11 @@ input[type="text"] {
   border: 1px solid #96a0aa;
 }
 
+input.form-control:focus {
+  outline: none;
+  border: 2px solid #06a865;
+}
+
 ::-webkit-input-placeholder {
   /* Edge */
   color: #a6aeb7;
@@ -104,27 +107,123 @@ input[type="text"] {
   font-size: 15px;
   text-align: left;
 }
-a.terms-privacy {
-  color: #66d1ef;
+a.terms-privacy, .forgot-password a, .sign-your-org a {
+  color: #06a865;
   font-weight: 600;
 }
 
-a.terms-privacy:hover {
-  color: black;
+a.terms-privacy:hover, .forgot-password a:hover,
+.sign-your-org a:hover {
+  color: #2e3d49;
   text-decoration: none;
 }
 
 button[type="submit"] {
-  background-color: #02b3e4;
-  /* box-shadow: 1px 2px 3px 3px rgba(0,0,0,0.04);
-    color: #e4f7fc; */
+  background-color: #1DBF73;
   box-shadow: 12px 15px 20px rgba(0, 0, 0, 0.1);
+  border-color: #1DBF73;
   color: #fff;
   font-size: 14px;
   font-weight: 600;
 }
 
 button[type="submit"]:hover {
-  background-color: #028bb1;
+  background-color: #06a865;
+  border-color:  #06a865;
 }
 
+
+
+/* course listing styling */
+
+.catalog{
+  font-size: 35px;
+  /* font-weight: 300; */
+  color: #06a865;
+}
+
+.course-heading{
+  font-size: 14px; 
+  color: #7D97AD;
+}
+
+.course-title a{
+  font-weight: 500;
+  color: #2e3d49;
+  display: block;
+  font-size: 20px;
+  /* line-height: 1.6rem;
+  max-height: 4.8rem; */
+}
+
+.course-title a:hover, a.program-details:hover{
+  text-decoration: none;
+  color: #5ebc95;
+}
+
+.card-text{
+  color: #2e3d49;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+
+.skills-covered{
+  color: #767676;
+}
+
+.skills-covered-content, .skills-level{
+  color: #2e3d49;
+}
+
+.col-4{
+    /* border: 1px solid red; */
+    /* position: relative;
+    left: -45px;
+    max-width: 40%; */
+}
+
+.proficiency{
+  position: absolute;
+  left: 37px;
+}
+.tag-div{
+  /* position: relative;
+  right: 20px;
+  padding: 10px; */
+}
+
+.new-tag{
+  border-radius: 3px;
+  padding: 10px;
+  font-size: 14px ;
+  letter-spacing: 0.125rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #06a865;
+  background: #fff;
+  box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2);
+}
+
+a.program-details{
+  color: #5ebc95;
+}
+
+.sticky-navbars-scroll{
+  position: fixed;
+  top: 0;
+  /* left: 0; */
+  width: 100%;
+  z-index: 100;
+  border-top: 0;
+  background: white;
+  box-shadow: 0px 1px 20px 0px rgba(46, 61, 73, 0.2);
+}
+
+/* 5px 5px 3px #999 */
+
+
+@media only screen and (max-width: 576px){
+  .img-card, .horizontal-content{
+    display: none;
+  }
+}

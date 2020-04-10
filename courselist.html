@@ -15,70 +15,503 @@
         rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 
+    <style>
+        html,body {
+            /* height: 100% */
+            font-family: "Open Sans", sans-serif;
+            background-color: #D2F1E2;
+        }
+
+        #menuToggle span{
+            background-color: #5ebc95;
+        }
+    </style>
 </head>
 <body>
-    <div class="container-fluid bg1">
-        <nav id="Mnav" role="navigation">
-            <h3 class="text-center"><img src="images/logo.png"></h3>
-            <div id="menuToggle">
-                <input type="checkbox" />
-                <span></span>
-                <span></span>
-                <span></span>
-                <ul class="navbar-nav ml-auto" id="menu">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Programs<i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Career<i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Enterprise</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign In</a>
-                    </li>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="started" href="#">Get Started</a>
-                    </li>
-                </ul>
+    <div class="container-fluid">
+        <div class="row sticky-navbars">
+            <!-- <div class="col-2"></div> -->
+            <div class="col-12 pt-3" id="logo-div">
+                <nav class="" id="Mnav" role="navigation">
+                    <h3 class="text-center"><img src="images/ustacky-transparent.png"></h3>
+                    <div id="menuToggle">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <ul class="navbar-nav ml-auto" id="menu">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Programs<i class="fas fa-angle-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Career<i class="fas fa-angle-down"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Enterprise</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="started" href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav id="Dnav" class="container-fluid">
+                            <a href=" index.html" class="navbar-brand"><img src="images/ustacky-logo.PNG"></a>
+                    <div id="NavBar">
+                        <ul>
+                            <li>
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Programs<i class="fas fa-angle-down"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Career<i class="fas fa-angle-down"></i></a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Enterprise</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#">Sign In</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" id="started" href="#">Get Started</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- <a href="/"> <img src="images/ustacky-logo.PNG" alt="ustacky-logo"> </a> -->
             </div>
-        </nav>
-        <nav id="Dnav" class="container-fluid">
-            <a href="index.html" class="navbar-brand"><img src="images/lodo.png"></a>
-            <div id="NavBar">
-                <ul>
-                    <li>
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Programs<i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Career<i class="fas fa-angle-down"></i></a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Enterprise</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#">Sign In</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" id="started" href="#">Get Started</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-    
+            <!-- <div class="col-4"></div> -->
+        </div>
+        
 
-    <script type="text/javascript" src="js/jQuery.js"></script>
+        
+
+        <div class="row mb-5">
+            <div class="text-center col-12 catalog">
+                Program Catalog
+            </div>
+        </div>
+
+        <!-- first card div -->
+        <div class="card mx-auto row mb-3">
+            
+            <!--first column, above horizontal line content -->
+            <div class="col-12 card-body">
+                <div class="row card-content pt-2">
+                    <!-- image column here to be hidden on small screen -->
+                    <div class="col-md-3 img-card">
+                        <img src="images/real_world_project.jpg">
+                    </div>
+
+                    <!-- second content column -->
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 card-title pt-1 mb-0">
+                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                <span class="course-heading"> School of Programming </span>
+                            </div>
+                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                <a href="#">Introduction To Programming</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8 card-text">
+                                        <span class="skills-covered">Skills Covered</span> <br>
+                                        <span class="skills-covered-content">Introduction to <br> </span>
+                                        <span class="skills-covered-content"> Programming, HTML, CSS, </span>
+                                    </div>
+                                    <div class="col-4 my-3 skills-level">
+                                        <span class="skill-status">
+                                            <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                                        </span>
+                                        <span class="proficiency">Beginner</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      
+                    </div>
+
+                    <!-- third content column..New tag -->
+                    <div class="col-3 px-4 pt-2">
+                        <span class="new-tag"> New </span>
+                    </div>
+                </div>       
+            </div>
+            <!-- end of above the line content -->
+
+            <!--second column, horizontal line here -->
+            <div class="col-12 horizontal-content">
+                <hr>
+                <div class="row">
+                    <div class="col-7">
+                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
+                            <i class="fas fa-plus"></i>
+                            Program Details
+                        </a>
+                        <div id="collapsible-text" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-4 skills-level">
+                            <span class="skill-status">
+                                <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                            </span>
+                            <span class="proficiency">Beginner</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of horizontal -->
+        </div>
+        
+        <!-- second card div -->
+        <div class="card mx-auto mb-3 row">
+        
+            <!--first column, above horizontal line content -->
+            <div class="col-12 card-body">
+                <div class="row card-content pt-2">
+                    <!-- image column here to be hidden on small screen -->
+                    <div class="col-md-3 img-card">
+                        <img src="images/real_world_project.jpg">
+                    </div>
+        
+                    <!-- second content column -->
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 card-title pt-1 mb-0">
+                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                <span class="course-heading"> School of Programming </span>
+                            </div>
+                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                <a href="#">Front End Web Developer</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8 card-text">
+                                        <span class="skills-covered">Skills Covered</span> <br>
+                                        <span class="skills-covered-content">JavaScript, HTML, CSS, <br> </span>
+                                        <span class="skills-covered-content"> Webpack, Flexbox </span>
+                                    </div>
+                                    <div class="col-4 my-3 skills-level">
+                                        <span class="skill-status">
+                                            <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                        </span>
+                                        <span class="proficiency">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- third content column..New tag -->
+                    <div class="col-3 px-4 pt-2">
+                        <span class="new-tag"> New </span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of above the line content -->
+        
+            <!--second column, horizontal line here -->
+            <div class="col-12 horizontal-content">
+                <hr>
+                <div class="row">
+                    <div class="col-7">
+                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
+                            <i class="fas fa-plus"></i>
+                            Program Details
+                        </a>
+                        <div id="collapsible-text" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-4 skills-level">
+                            <span class="skill-status">
+                                <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                            </span>
+                            <span class="proficiency">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of horizontal -->
+        </div>
+        <!-- end of second card div -->
+
+        <!-- third card div -->
+        <div class="card mx-auto mb-3 row">
+        
+            <!--first column, above horizontal line content -->
+            <div class="col-12 card-body">
+                <div class="row card-content pt-2">
+                    <!-- image column here to be hidden on small screen -->
+                    <div class="col-md-3 img-card">
+                        <img src="images/real_world_project.jpg">
+                    </div>
+        
+                    <!-- second content column -->
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 card-title pt-1 mb-0">
+                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                <span class="course-heading"> School of Programming </span>
+                            </div>
+                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                <a href="#">Full Stack Web Developer</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8 card-text">
+                                        <span class="skills-covered">Skills Covered</span> <br>
+                                        <span class="skills-covered-content">Python, JavaScript, <br> </span>
+                                        <span class="skills-covered-content"> PostgreSQL, Flask </span>
+                                    </div>
+                                    <div class="col-4 my-3 skills-level">
+                                        <span class="skill-status">
+                                            <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
+                                        </span>
+                                        <span class="proficiency">Advanced</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- third content column..New tag -->
+                    <div class="col-3 px-4 pt-2">
+                        <span class="new-tag"> New </span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of above the line content -->
+        
+            <!--second column, horizontal line here -->
+            <div class="col-12 horizontal-content">
+                <hr>
+                <div class="row">
+                    <div class="col-7">
+                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
+                            <i class="fas fa-plus"></i>
+                            Program Details
+                        </a>
+                        <div id="collapsible-text" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-4 skills-level">
+                            <span class="skill-status">
+                                <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
+                            </span>
+                            <span class="proficiency">Advanced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of horizontal -->
+        </div>
+        <!-- end of third card div -->
+
+        <!-- fourth card div -->
+        <div class="card mx-auto mb-3 row">
+        
+            <!--first column, above horizontal line content -->
+            <div class="col-12 card-body">
+                <div class="row card-content pt-2">
+                    <!-- image column here to be hidden on small screen -->
+                    <div class="col-md-3 img-card">
+                        <img src="images/real_world_project.jpg">
+                    </div>
+        
+                    <!-- second content column -->
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12 card-title pt-1 mb-0">
+                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                <span class="course-heading"> School of Programming </span>
+                            </div>
+                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                <a href="#">Java Developer</a>
+                            </div>
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-8 card-text">
+                                        <span class="skills-covered">Skills Covered</span> <br>
+                                        <span class="skills-covered-content">Java, Spring Boot, Rest CSS, <br> </span>
+                                        <span class="skills-covered-content">Api, MySql, MongoDB </span>
+                                    </div>
+                                    <div class="col-4 my-3 skills-level">
+                                        <span class="skill-status">
+                                            <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                        </span>
+                                        <span class="proficiency">Intermediate</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- third content column..New tag -->
+                    <div class="col-3 px-4 pt-2">
+                        <span class="new-tag"> New </span>
+                    </div>
+                </div>
+            </div>
+            <!-- end of above the line content -->
+        
+            <!--second column, horizontal line here -->
+            <div class="col-12 horizontal-content">
+                <hr>
+                <div class="row">
+                    <div class="col-7">
+                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
+                            <i class="fas fa-plus"></i>
+                            Program Details
+                        </a>
+                        <div id="collapsible-text" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="col-4 skills-level">
+                            <span class="skill-status">
+                                <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                            </span>
+                            <span class="proficiency">Intermediate</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of horizontal -->
+        </div>
+        <!-- end of fourth card div -->
+
+        <!-- <div class="row">
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+        </div>
+        <div class="row">
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+            <div class="col-12"></div>
+        </div> -->
+        
+    </div>
+
+    <i class="far fa-comment-dots" id="chat"></i>
+    <footer class="bg-dark padding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 f_content">
+                    <img src="images/lodo.png" class="logo"><br>
+                    <p>...your stack companion</p>
+                </div>
+                <div class="col-md-9 justify-content-center text-left">
+                    <div class="accordion row d-md-flex w-100" id="accordion">
+                        <div class="col-md-5 px-0 col-lg-3 f_content">
+                            <a href="#company" data-toggle="collapse"
+                                class="h5 nav-link text-white px-0 d-block d-md-none">Company<i
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="h5 text-white d-none d-md-block">
+                                Company
+                            </div>
+                            <div class="collapse d-md-flex" id="company" data-parent="#accordion">
+                                <ul>
+                                    <li><a href="">About</a></li>
+                                    <li><a href="">Blog</a></li>
+                                    <li><a href="">In the News</a></li>
+                                    <li><a href="">Jobs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-7 px-0 col-lg-5 f_content">
+                            <a href="#USchools" data-toggle="collapse"
+                                class="h5 nav-link text-white px-0 d-block d-md-none">Ustacky Schools <i
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="h5 text-white d-none d-md-block">
+                                Ustacky Faculty
+                            </div>
+                            <div class="collapse d-md-flex" id="USchools" data-parent="#accordion">
+                                <ul>
+                                    <li><a href="">Faculty of Programming</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-0 col-lg-4 f_content">
+                            <a href="#Support" data-toggle="collapse"
+                                class="h5 nav-link text-white px-0 d-block d-md-none">Supports <i
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="h5 text-white d-none d-md-block">
+                                Supports
+                            </div>
+                            <div class="collapse d-md-flex" id="Support" data-parent="#accordion">
+                                <ul>
+                                    <li><a href="">Contact Us</a></li>
+                                    <li><a href="">Help and FAQ</a></li>
+    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <div class="row">
+                <div class="col-md-12 col-lg-8 px-0 py-2 text-center">
+                    <ul>
+                        <li><a href="">&copy;2011-2019 Ustacky Inc.</a></li>
+                        <li><a href="">Legal &amp; Privacy</a></li>
+                        <li><a href="">Regulatory Information</a></li>
+                        <li><a href="">Site Map</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2 px-0 py-2 f_content follow text-center">
+                    <ul>
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-2 px-0 py-2 text-center" id="eng">
+                    <a href="">ENG <i class="fas fa-angle-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+        
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrapjs/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a2488c675b.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
