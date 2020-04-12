@@ -33,14 +33,14 @@ form {
   cursor: pointer;
 }
 
-#signin:not(.active){
+#signup:not(.active){
   border-left: 1px solid #dbe2e8;
   border-bottom: 1px solid #dbe2e8;
   background: #fafbfc;
   transition: box-shadow 0.05s linear;
 }
 
-#signup:not(.active){
+#signin:not(.active){
   border-right: 1px solid #dbe2e8;
   border-bottom: 1px solid #dbe2e8;
   background: #fafbfc;
@@ -113,7 +113,12 @@ a.terms-privacy, .forgot-password a, .sign-your-org a {
   font-weight: 600;
 }
 
-a.terms-privacy:hover, .forgot-password a:hover,
+a.terms-privacy:hover{
+  color: #2e3d49;
+  text-decoration: underline;
+}
+
+.forgot-password a:hover,
 .sign-your-org a:hover {
   color: #2e3d49;
   text-decoration: none;
@@ -224,8 +229,9 @@ a.program-details{
 
 
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 600px){
   .img-card, .horizontal-content{
     display: none;
   }
+  /* 576 */
 }
