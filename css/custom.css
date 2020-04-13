@@ -181,13 +181,6 @@ button[type="submit"]:hover {
   color: #2e3d49;
 }
 
-.col-4{
-    /* border: 1px solid red; */
-    /* position: relative;
-    left: -45px;
-    max-width: 40%; */
-}
-
 .proficiency{
   position: absolute;
   left: 37px;
@@ -212,6 +205,71 @@ button[type="submit"]:hover {
 
 a.program-details{
   color: #5ebc95;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.card-div{
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  box-shadow: 5px 5px 3px #999;
+}
+
+.collapsible-skills-content{
+  margin-top: -15px;
+  padding: 10px 0px 15px;
+}
+
+.horizontal-content{
+  /* border: 1px solid red; */
+  margin-top: -5px; 
+}
+
+  .horizontal-line{
+    /* position: relative;
+    top: -5px; */
+  }
+
+  /* .minus::before{
+   font-family: "Font Awesome 5 Free";
+   content: "\f068";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+} */
+
+a.program-details i.fas{
+  /* transform: rotate(-45deg) translate(0, -1px); */
+}
+
+.fas.fa-minus-circle{
+  display: none;
+}
+
+.fas.fa-plus{
+  /* display: inline-block; */
+}
+
+.course-list-images img{
+  opacity: 0.3;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.course-list-images img:hover{
+  opacity: 1;
 }
 
 /* add this class to navbar on course list page */
@@ -228,10 +286,90 @@ a.program-details{
 
 
 
-
-@media only screen and (max-width: 600px){
-  .img-card, .horizontal-content{
+@media only screen and (max-width: 767px){
+  .course-list-images, .horizontal-content{
     display: none;
   }
-  /* 576 */
+
+   .new-tag{
+    position: relative;
+    left: 20px;
+  }
+}
+
+@media only screen and (min-width:600px) and (max-width: 767px){
+  /* .new-tag{
+    position: relative;
+    left: 60px;
+  } */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body{
+    overflow-x: hidden;
+  }
+
+  .course-list-images, .above-skills-level{
+    display: none;
+  }
+
+  .new-tag{
+    position: relative;
+    left: 20px;
+  }
+
+  .below-skills-level{
+    position: relative;
+    left: 50px;
+  }
+
+}
+
+@media only screen and (min-width: 992px){
+    body{
+    overflow-x: hidden;
+  } 
+
+  .above-skills-level{
+    display: none;
+  }  
+
+  .skills-covered, .skills-covered-content{
+    font-size: 20px;
+  }
+
+  .course-heading{
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    font-size: 15px;
+  }
+
+  .skills-covered, .skills-covered-content, .course-title{
+    /* word-spacing: 0.6em; */
+    letter-spacing: 0.1em;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+  .new-tag{
+    position: relative;
+    left: 40px;
+  }
+
+  .below-skills-level{
+    position: relative;
+    left: 85px;
+  }
+}
+
+
+@media only screen and (min-width: 1200px){
+  .new-tag{
+    position: relative;
+    left: 80px;
+  }
+  .below-skills-level{
+    position: relative;
+    left: 130px;
+  }
 }

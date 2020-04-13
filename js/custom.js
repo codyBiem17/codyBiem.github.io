@@ -22,4 +22,45 @@ $(document).ready(function () {
     $(window).scroll(function () {
         stickyNavbars();
     });
+
+    
+
+    function slideToggleIcons() {
+        $('.program-details').click(function () {
+            if ($(this).children('i.fa-plus-circle').is(':visible')) {
+                $(this).children('i.fa-plus-circle').slideToggle();
+                    // if ($('i:not(.fa-plus)').is(':visible') == false) {
+                $(this).children('i.fa-minus-circle').show()
+                    // }
+                // });
+            }
+
+            else  {
+                $(this).children('i.fa-minus-circle').slideToggle();
+                $(this).children('i.fa-plus-circle').show();
+                // $('i.fa-minus').hide();
+                // });
+            }
+        })
+    }
+    slideToggleIcons()
+
+  
+
+    // $('a.program-details').click(function () {
+    //     var children = $(this).children();
+    //     if (children.hasClass('fa-plus')) {
+    //         $('.fa-plus').slideToggle(function () {
+    //             $('.fa-minus').show()
+    //         });
+    //     }
+    //     else if (children.hasClass('fa-minus')) {
+    //         $('.fa-minus').slideToggle(function () {
+    //             $('.fa-plus').show();
+    //             $('.fa-minus').hide();
+    //         });
+    //     }  
+    // })
+
+
 });

@@ -19,11 +19,32 @@
         html,body {
             /* height: 100% */
             font-family: "Open Sans", sans-serif;
-            background-color: #D2F1E2;
+            /* background-color: #D2F1E2; */
         }
 
         #menuToggle span{
             background-color: #5ebc95;
+        }
+
+        @media only screen and (min-width: 820px) {
+            /* #Dnav {
+                display: none;
+            }
+            #Mnav {
+                display: block;
+            } */
+
+            #NavBar ul li {
+                display: inline-block;
+            }
+
+            a.nav-link{
+                color: #1DBF73;
+            }
+            a.nav-link:hover{
+                color: white !important;
+                background: #1DBF73;
+            }
         }
     </style>
 </head>
@@ -64,7 +85,7 @@
                     </div>
                 </nav>
                 <nav id="Dnav" class="container-fluid">
-                            <a href=" index.html" class="navbar-brand"><img src="images/ustacky-logo.PNG"></a>
+                            <a href=" index.html" class="navbar-brand"><img src="images/ustacky-transparent.png"></a>
                     <div id="NavBar">
                         <ul>
                             <li>
@@ -102,308 +123,332 @@
             </div>
         </div>
 
-        <!-- first card div -->
-        <div class="card mx-auto row mb-3">
+        <!-- card rows -->
+        <div id="accordion-cards" class="row">
+
+            <!-- first card div -->
+            <div class="col-11 col-lg-10 card-div mx-auto mb-4">
+                <div class="row">
+                    <!--first column, above horizontal line content -->
+                    <div class="col-12 card-body">
+                        <div class="row card-content pt-2">
+                            <!-- image column here to be hidden on small screen -->
+                            <div class="col-lg-2 col-xl-3 course-list-images">
+                                <img src="images/card_img1.jpg">
+                                <!-- <div class="card-img-overlay">
+                                    <img src="images/computer.png" alt="" style="width: 20px; height: 20px;">
+                                </div> -->
+                            </div>
+                    
+                            <!-- second content column -->
+                            <div class="col-9 col-sm-10 col-lg-8 col-xl-7">
+                                <div class="row">
+                                    <div class="col-12 card-title pt-1 mb-0">
+                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                        <span class="course-heading"> School of Programming </span>
+                                    </div>
+                                    <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                        <a href="#">Introduction To Programming</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8 col-sm-7 card-text">
+                                                <span class="skills-covered">Skills Covered</span> <br>
+                                                <span class="skills-covered-content">Introduction to <br> </span>
+                                                <span class="skills-covered-content"> Programming, HTML, CSS, </span>
+                                            </div>
+                                            <div class="col-4 col-sm-5 my-3 above-skills-level">
+                                                <span class="skill-status">
+                                                    <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                                                </span>
+                                                <span class="proficiency">Beginner</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- third content column..New tag -->
+                            <div class="col-3 col-sm-2 pt-2">
+                                <span class="new-tag"> New </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of above the line content -->
+                    
+                    <!--second column, horizontal line here -->
+                    <div class="col-md-12 horizontal-content">
+                        <hr class="horizontal-line">
+                        <div class="row">
+                    
+                            <div class="col-9 collapsible-skills-content">
+                                <a href="#collapsible-text1" class="program-details" data-toggle="collapse">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <i class="fas fa-minus-circle"></i>
+                                    Program Details
+                                </a>
+                                <div id="collapsible-text1" class="collapse" data-parent="#accordion-cards">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                    
+                            <div class="col-3 below-skills-level collapsible-skills-content">
+                                <span class="skill-status">
+                                    <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                                </span>
+                                <span class="proficiency">Beginner</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <!-- end of horizontal -->
+                </div>
+            </div>
+            <!-- end of first div -->
+
+            <!-- second card div -->
+            <div class="col-11 col-lg-10 card-div mx-auto mb-4">
+                <div class="row">
+                    <!--first column, above horizontal line content -->
+                    <div class="col-12 card-body">
+                        <div class="row card-content pt-2">
+                            <!-- image column here to be hidden on small screen -->
+                            <div class="col-lg-2 col-xl-3 course-list-images">
+                                <img src="images/real_world_project.jpg">
+                            </div>
+                    
+                            <!-- second content column -->
+                            <div class="col-9 col-sm-10 col-lg-8 col-xl-7">
+                                <div class="row">
+                                    <div class="col-12 card-title pt-1 mb-0">
+                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                        <span class="course-heading"> School of Programming </span>
+                                    </div>
+                                    <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                        <a href="#">Front End Web Developer</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8 col-sm-7 card-text">
+                                                <span class="skills-covered">Skills Covered</span> <br>
+                                                <span class="skills-covered-content">JavaScript, HTML, CSS, <br> </span>
+                                                <span class="skills-covered-content"> Webpack, Flexbox </span>
+                                            </div>
+                                            <div class="col-4 col-sm-5 my-3 above-skills-level">
+                                                <span class="skill-status">
+                                                    <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                                </span>
+                                                <span class="proficiency">Intermediate</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- third content column..New tag -->
+                            <div class="col-3 col-sm-2 pt-2">
+                                <span class="new-tag"> New </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of above the line content -->
+                    
+                    <!--second column, horizontal line here -->
+                    <div class="col-md-12 horizontal-content">
+                        <hr class="horizontal-line">
+                        <div class="row">
+                    
+                            <div class="col-9 collapsible-skills-content">
+                                <a href="#collapsible-text2" class="program-details" data-toggle="collapse">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <i class="fas fa-minus-circle"></i>
+                                    Program Details
+                                </a>
+                                <div id="collapsible-text2" class="collapse" data-parent="#accordion-cards">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                    
+                            <div class="col-3 below-skills-level collapsible-skills-content">
+                                <span class="skill-status">
+                                    <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                </span>
+                                <span class="proficiency">Intermediate</span>
+                            </div>
+                    
+                        </div>
+                    </div>
+                    <!-- end of horizontal -->
+                </div>
+                
+            </div>
+            <!-- end of second card div -->
             
-            <!--first column, above horizontal line content -->
-            <div class="col-12 card-body">
-                <div class="row card-content pt-2">
-                    <!-- image column here to be hidden on small screen -->
-                    <div class="col-md-3 img-card">
-                        <img src="images/real_world_project.jpg">
-                    </div>
-
-                    <!-- second content column -->
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-12 card-title pt-1 mb-0">
-                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                <span class="course-heading"> School of Programming </span>
+            <!-- third card div -->
+            <div class="col-11 col-lg-10 card-div mx-auto mb-4">
+                <div class="row">
+                    <!--first column, above horizontal line content -->
+                    <div class="col-12 card-body">
+                        <div class="row card-content pt-2">
+                            <!-- image column here to be hidden on small screen -->
+                            <div class="col-lg-2 col-xl-3 course-list-images">
+                                <img src="images/real_world_project.jpg">
                             </div>
-                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
-                                <a href="#">Introduction To Programming</a>
-                            </div>
-                            <div class="col-12">
+                    
+                            <!-- second content column -->
+                            <div class="col-9 col-sm-10 col-lg-8 col-xl-7">
                                 <div class="row">
-                                    <div class="col-8 card-text">
-                                        <span class="skills-covered">Skills Covered</span> <br>
-                                        <span class="skills-covered-content">Introduction to <br> </span>
-                                        <span class="skills-covered-content"> Programming, HTML, CSS, </span>
+                                    <div class="col-12 card-title pt-1 mb-0">
+                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                        <span class="course-heading"> School of Programming </span>
                                     </div>
-                                    <div class="col-4 my-3 skills-level">
-                                        <span class="skill-status">
-                                            <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
-                                        </span>
-                                        <span class="proficiency">Beginner</span>
+                                    <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                        <a href="#">Full Stack Web Developer</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8 col-sm-7 card-text">
+                                                <span class="skills-covered">Skills Covered</span> <br>
+                                                <span class="skills-covered-content">Python, JavaScript, <br> </span>
+                                                <span class="skills-covered-content"> PostgreSQL, Flask </span>
+                                            </div>
+                                            <div class="col-4 col-sm-5 my-3 above-skills-level">
+                                                <span class="skill-status">
+                                                    <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
+                                                </span>
+                                                <span class="proficiency">Advanced</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>      
-                    </div>
-
-                    <!-- third content column..New tag -->
-                    <div class="col-3 px-4 pt-2">
-                        <span class="new-tag"> New </span>
-                    </div>
-                </div>       
-            </div>
-            <!-- end of above the line content -->
-
-            <!--second column, horizontal line here -->
-            <div class="col-12 horizontal-content">
-                <hr>
-                <div class="row">
-                    <div class="col-7">
-                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
-                            <i class="fas fa-plus"></i>
-                            Program Details
-                        </a>
-                        <div id="collapsible-text" class="collapse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    
+                            <!-- third content column..New tag -->
+                            <div class="col-3 col-sm-2 pt-2">
+                                <span class="new-tag"> New </span>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="col-4 skills-level">
-                            <span class="skill-status">
-                                <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
-                            </span>
-                            <span class="proficiency">Beginner</span>
+                    <!-- end of above the line content -->
+                    
+                    <!--second column, horizontal line here -->
+                    <div class="col-md-12 horizontal-content">
+                        <hr class="horizontal-line">
+                        <div class="row">
+                    
+                            <div class="col-9 collapsible-skills-content">
+                                <a href="#collapsible-text3" class="program-details" data-toggle="collapse">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <i class="fas fa-minus-circle"></i>
+                                    Program Details
+                                </a>
+                                <div id="collapsible-text3" class="collapse" data-parent="#accordion-cards">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </div>
+                            </div>
+                    
+                            <div class="col-3 below-skills-level collapsible-skills-content">
+                                <span class="skill-status">
+                                    <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
+                                </span>
+                                <span class="proficiency">Advanced</span>
+                            </div>
+                    
                         </div>
                     </div>
+                    <!-- end of horizontal -->
                 </div>
             </div>
-            <!-- end of horizontal -->
-        </div>
-        
-        <!-- second card div -->
-        <div class="card mx-auto mb-3 row">
-        
-            <!--first column, above horizontal line content -->
-            <div class="col-12 card-body">
-                <div class="row card-content pt-2">
-                    <!-- image column here to be hidden on small screen -->
-                    <div class="col-md-3 img-card">
-                        <img src="images/real_world_project.jpg">
-                    </div>
-        
-                    <!-- second content column -->
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-12 card-title pt-1 mb-0">
-                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                <span class="course-heading"> School of Programming </span>
+            <!-- end of third card div -->
+            
+            <!-- fourth card div -->
+            <div class="col-11 col-lg-10 card-div mx-auto mb-4">
+                <div class="row">
+                    <!--first column, above horizontal line content -->
+                    <div class="col-12 card-body">
+                        <div class="row card-content pt-2">
+                            <!-- image column here to be hidden on small screen -->
+                            <div class="col-lg-2 col-xl-3 course-list-images">
+                                <img src="images/real_world_project.jpg">
                             </div>
-                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
-                                <a href="#">Front End Web Developer</a>
-                            </div>
-                            <div class="col-12">
+                    
+                            <!-- second content column -->
+                            <div class="col-9 col-sm-10 col-lg-8 col-xl-7">
                                 <div class="row">
-                                    <div class="col-8 card-text">
-                                        <span class="skills-covered">Skills Covered</span> <br>
-                                        <span class="skills-covered-content">JavaScript, HTML, CSS, <br> </span>
-                                        <span class="skills-covered-content"> Webpack, Flexbox </span>
+                                    <div class="col-12 card-title pt-1 mb-0">
+                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
+                                        <span class="course-heading"> School of Programming </span>
                                     </div>
-                                    <div class="col-4 my-3 skills-level">
-                                        <span class="skill-status">
-                                            <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
-                                        </span>
-                                        <span class="proficiency">Intermediate</span>
+                                    <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
+                                        <a href="#">Java Developer</a>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-8 col-sm-7 card-text">
+                                                <span class="skills-covered">Skills Covered</span> <br>
+                                                <span class="skills-covered-content">Java, Spring Boot, Rest CSS, <br> </span>
+                                                <span class="skills-covered-content">Api, MySql, MongoDB </span>
+                                            </div>
+                                            <div class="col-4 col-sm-5 my-3 above-skills-level">
+                                                <span class="skill-status">
+                                                    <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                                </span>
+                                                <span class="proficiency">Intermediate</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                    
+                            <!-- third content column..New tag -->
+                            <div class="col-3 col-sm-2 pt-2">
+                                <span class="new-tag"> New </span>
+                            </div>
                         </div>
                     </div>
-        
-                    <!-- third content column..New tag -->
-                    <div class="col-3 px-4 pt-2">
-                        <span class="new-tag"> New </span>
-                    </div>
-                </div>
-            </div>
-            <!-- end of above the line content -->
-        
-            <!--second column, horizontal line here -->
-            <div class="col-12 horizontal-content">
-                <hr>
-                <div class="row">
-                    <div class="col-7">
-                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
-                            <i class="fas fa-plus"></i>
-                            Program Details
-                        </a>
-                        <div id="collapsible-text" class="collapse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="col-4 skills-level">
-                            <span class="skill-status">
-                                <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
-                            </span>
-                            <span class="proficiency">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end of horizontal -->
-        </div>
-        <!-- end of second card div -->
-
-        <!-- third card div -->
-        <div class="card mx-auto mb-3 row">
-        
-            <!--first column, above horizontal line content -->
-            <div class="col-12 card-body">
-                <div class="row card-content pt-2">
-                    <!-- image column here to be hidden on small screen -->
-                    <div class="col-md-3 img-card">
-                        <img src="images/real_world_project.jpg">
-                    </div>
-        
-                    <!-- second content column -->
-                    <div class="col-9">
+                    <!-- end of above the line content -->
+                    
+                    <!--second column, horizontal line here -->
+                    <div class="col-md-12 horizontal-content">
+                        <hr class="horizontal-line">
                         <div class="row">
-                            <div class="col-12 card-title pt-1 mb-0">
-                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                <span class="course-heading"> School of Programming </span>
-                            </div>
-                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
-                                <a href="#">Full Stack Web Developer</a>
-                            </div>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-8 card-text">
-                                        <span class="skills-covered">Skills Covered</span> <br>
-                                        <span class="skills-covered-content">Python, JavaScript, <br> </span>
-                                        <span class="skills-covered-content"> PostgreSQL, Flask </span>
-                                    </div>
-                                    <div class="col-4 my-3 skills-level">
-                                        <span class="skill-status">
-                                            <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
-                                        </span>
-                                        <span class="proficiency">Advanced</span>
-                                    </div>
+                    
+                            <div class="col-9 collapsible-skills-content">
+                                <a href="#collapsible-text4" class="program-details" data-toggle="collapse">
+                                    <i class="fas fa-plus-circle"></i>
+                                    <i class="fas fa-minus-circle"></i>
+                                    Program Details
+                                </a>
+                                <div id="collapsible-text4" class="collapse" data-parent="#accordion-cards">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                                 </div>
                             </div>
+                    
+                            <div class="col-3 below-skills-level collapsible-skills-content">
+                                <span class="skill-status">
+                                    <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                                </span>
+                                <span class="proficiency">Intermediate</span>
+                            </div>
+                    
                         </div>
                     </div>
-        
-                    <!-- third content column..New tag -->
-                    <div class="col-3 px-4 pt-2">
-                        <span class="new-tag"> New </span>
-                    </div>
+                    <!-- end of horizontal -->
                 </div>
             </div>
-            <!-- end of above the line content -->
-        
-            <!--second column, horizontal line here -->
-            <div class="col-12 horizontal-content">
-                <hr>
-                <div class="row">
-                    <div class="col-7">
-                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
-                            <i class="fas fa-plus"></i>
-                            Program Details
-                        </a>
-                        <div id="collapsible-text" class="collapse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="col-4 skills-level">
-                            <span class="skill-status">
-                                <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
-                            </span>
-                            <span class="proficiency">Advanced</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end of horizontal -->
-        </div>
-        <!-- end of third card div -->
+            <!-- end of fourth card div -->
 
-        <!-- fourth card div -->
-        <div class="card mx-auto mb-3 row">
-        
-            <!--first column, above horizontal line content -->
-            <div class="col-12 card-body">
-                <div class="row card-content pt-2">
-                    <!-- image column here to be hidden on small screen -->
-                    <div class="col-md-3 img-card">
-                        <img src="images/real_world_project.jpg">
-                    </div>
-        
-                    <!-- second content column -->
-                    <div class="col-9">
-                        <div class="row">
-                            <div class="col-12 card-title pt-1 mb-0">
-                                <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                <span class="course-heading"> School of Programming </span>
-                            </div>
-                            <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
-                                <a href="#">Java Developer</a>
-                            </div>
-                            <div class="col-12">
-                                <div class="row">
-                                    <div class="col-8 card-text">
-                                        <span class="skills-covered">Skills Covered</span> <br>
-                                        <span class="skills-covered-content">Java, Spring Boot, Rest CSS, <br> </span>
-                                        <span class="skills-covered-content">Api, MySql, MongoDB </span>
-                                    </div>
-                                    <div class="col-4 my-3 skills-level">
-                                        <span class="skill-status">
-                                            <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
-                                        </span>
-                                        <span class="proficiency">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- third content column..New tag -->
-                    <div class="col-3 px-4 pt-2">
-                        <span class="new-tag"> New </span>
-                    </div>
-                </div>
-            </div>
-            <!-- end of above the line content -->
-        
-            <!--second column, horizontal line here -->
-            <div class="col-12 horizontal-content">
-                <hr>
-                <div class="row">
-                    <div class="col-7">
-                        <a href="#collapsible-text" class="program-details" data-toggle="collapse">
-                            <i class="fas fa-plus"></i>
-                            Program Details
-                        </a>
-                        <div id="collapsible-text" class="collapse">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="col-4 skills-level">
-                            <span class="skill-status">
-                                <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
-                            </span>
-                            <span class="proficiency">Intermediate</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end of horizontal -->
         </div>
-        <!-- end of fourth card div -->
+                
+        
 
         <!-- <div class="row">
             <div class="col-12"></div>
@@ -432,7 +477,7 @@
                     <p>...your stack companion</p>
                 </div>
                 <div class="col-md-9 justify-content-center text-left">
-                    <div class="accordion row d-md-flex w-100" id="accordion">
+                    <div class=" row d-md-flex w-100" id="">
                         <div class="col-md-5 px-0 col-lg-3 f_content">
                             <a href="#company" data-toggle="collapse"
                                 class="h5 nav-link text-white px-0 d-block d-md-none">Company<i
@@ -440,7 +485,7 @@
                             <div class="h5 text-white d-none d-md-block">
                                 Company
                             </div>
-                            <div class="collapse d-md-flex" id="company" data-parent="#accordion">
+                            <div class="collapse d-md-flex" id="company" data-parent="#">
                                 <ul>
                                     <li><a href="">About</a></li>
                                     <li><a href="">Blog</a></li>
@@ -456,7 +501,7 @@
                             <div class="h5 text-white d-none d-md-block">
                                 Ustacky Faculty
                             </div>
-                            <div class="collapse d-md-flex" id="USchools" data-parent="#accordion">
+                            <div class="collapse d-md-flex" id="USchools" data-parent="#">
                                 <ul>
                                     <li><a href="">Faculty of Programming</a></li>
                                 </ul>
@@ -469,7 +514,7 @@
                             <div class="h5 text-white d-none d-md-block">
                                 Supports
                             </div>
-                            <div class="collapse d-md-flex" id="Support" data-parent="#accordion">
+                            <div class="collapse d-md-flex" id="Support" data-parent="#">
                                 <ul>
                                     <li><a href="">Contact Us</a></li>
                                     <li><a href="">Help and FAQ</a></li>
