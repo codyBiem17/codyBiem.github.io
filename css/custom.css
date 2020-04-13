@@ -247,9 +247,36 @@ a.program-details{
    vertical-align: middle;
 } */
 
-a.program-details i.fas{
-  /* transform: rotate(-45deg) translate(0, -1px); */
+a.program-details::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f055";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  transition: transform .5s ease ;
+  -webkit-transition: transform .5s ease, ; 
 }
+
+a.rotate-icon-plus::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f056";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  transform: rotate(180deg); 
+}
+
+i.fa-plus-circle{
+  /* transition: transform .5s ease ;
+  -webkit-transition: transform .5s ease, ;  */
+}
+
+.rotate-icon-minus{
+  color: red;
+  display: inline-block;
+  transform: rotate(-180deg); 
+}
+
 
 .fas.fa-minus-circle{
   display: none;
@@ -290,37 +317,32 @@ a.program-details i.fas{
   .course-list-images, .horizontal-content{
     display: none;
   }
-
-   .new-tag{
-    position: relative;
-    left: 20px;
-  }
 }
 
 @media only screen and (min-width:600px) and (max-width: 767px){
-  /* .new-tag{
+  .new-tag{
     position: relative;
-    left: 60px;
-  } */
+    left: 45px;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  body{
+  /* body{
     overflow-x: hidden;
-  }
+  } */
 
   .course-list-images, .above-skills-level{
     display: none;
   }
 
   .new-tag{
-    position: relative;
-    left: 20px;
+    /* position: relative;
+    left: 20px; */
   }
 
   .below-skills-level{
     position: relative;
-    left: 50px;
+    left: 30px;
   }
 
 }
@@ -366,10 +388,10 @@ a.program-details i.fas{
 @media only screen and (min-width: 1200px){
   .new-tag{
     position: relative;
-    left: 80px;
+    left: 40px;
   }
   .below-skills-level{
     position: relative;
-    left: 130px;
+    left: 90px;
   }
 }

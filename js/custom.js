@@ -27,20 +27,22 @@ $(document).ready(function () {
 
     function slideToggleIcons() {
         $('.program-details').click(function () {
-            if ($(this).children('i.fa-plus-circle').is(':visible')) {
-                $(this).children('i.fa-plus-circle').slideToggle();
+            // if ($(this).children('i.fa-plus-circle').is(':visible')) {
+                // $(this).children('i.fa-plus-circle').toggleClass('rotate-icon-plus');
                     // if ($('i:not(.fa-plus)').is(':visible') == false) {
-                $(this).children('i.fa-minus-circle').show()
+                // $(this).children('i.fa-minus-circle').show()
                     // }
                 // });
-            }
+                // alert('gdvh')
+            $(this).toggleClass('rotate-icon-plus')
+            // }
 
-            else  {
-                $(this).children('i.fa-minus-circle').slideToggle();
-                $(this).children('i.fa-plus-circle').show();
-                // $('i.fa-minus').hide();
-                // });
-            }
+            // else  {
+            //     $(this).children('i.fa-minus-circle').toggleClass('rotate-icon-minus');
+            //     $(this).children('i.fa-plus-circle').show();
+            //     // $('i.fa-minus').hide();
+            //     // });
+            // }
         })
     }
     slideToggleIcons()
