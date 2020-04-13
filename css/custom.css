@@ -313,11 +313,11 @@ i.fa-plus-circle{
 
 
 @media only screen and (max-width:600px){
-  .new-tag{
+  /* .new-tag{
     position: relative;
     right: -45px;
     color: red;
-  }
+  } */
 }
 
 @media only screen and (max-width: 767px){
