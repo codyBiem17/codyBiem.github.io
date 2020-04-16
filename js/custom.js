@@ -7,13 +7,9 @@ $(document).ready(function () {
 
       
         if (scrollTop > offsetCatalogDiv) {
-            // $('.white-div').removeClass('d-none');
-            // $('#blue-div-nav').css({ display: "none" });
             $('.sticky-navbars').addClass('sticky-navbars-scroll');
-            // $('.hide-and-show').css({ display: "block" }).addClass('sticky-nav');
         }
         else {
-            // $('.white-div').addClass('d-none');
             $('.sticky-navbars').removeClass('sticky-navbars-scroll');
         }
     };
@@ -24,7 +20,7 @@ $(document).ready(function () {
     });
 
     
-
+    // slidetoggle icons effect
     function slideToggleIcons() {
         $('.program-details').click(function () {
             $(this).toggleClass('rotate-icon-plus');
@@ -33,13 +29,27 @@ $(document).ready(function () {
     }
     slideToggleIcons()
 
-    $('.hover-this-div').hover(function () {
-    //   alert('ghfsd')
-        $(this).prev('div').find('img').animate({ opacity: 1.0 }, 100);
-    }, function () {
-            $(this).prev('div').find('img').animate({ opacity: 0.3}, 100);
-        
-    })
+    // image hovering effect on large screen
+    function hoverEffect() {
+        $('.hover-this-div').hover(function () {
+            //   alert('ghfsd')
+            $(this).prev('div').find('img').animate({ opacity: 1.0 }, 100);
+        }, function () {
+            $(this).prev('div').find('img').animate({ opacity: 0.3 }, 100);
+
+        })
+
+        $('.course-list-images img').hover(function () {
+            //   alert('ghfsd')
+            $(this).animate({ opacity: 1.0 }, 100);
+        }, function () {
+            $(this).animate({ opacity: 0.3 }, 100);
+
+        })
+    }
+
+    hoverEffect();
+    
 
 
 
