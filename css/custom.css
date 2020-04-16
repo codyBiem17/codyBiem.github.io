@@ -6,6 +6,20 @@ header {
   padding: 25px 0;
 }
 
+.card-text, .course-title a, .skills-covered-content a, .above-skills-level span a,
+.below-skills-level span a, a.terms-privacy:hover, .forgot-password a:hover,
+.sign-your-org a:hover, .course-heading a:hover, .skills-covered a:hover, .skills-covered-content a:hover, .above-skills-level span a:hover,
+.below-skills-level span a:hover{
+  color: #2e3d49;
+}
+
+.course-title a:hover, a.program-details:hover, .skills-covered a:hover,
+.skills-covered-content a:hover, .above-skills-level span a:hover,
+.below-skills-level span a:hover,.forgot-password a:hover,
+.sign-your-org a:hover, .course-heading a:hover {
+   text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -114,14 +128,7 @@ a.terms-privacy, .forgot-password a, .sign-your-org a {
 }
 
 a.terms-privacy:hover{
-  color: #2e3d49;
   text-decoration: underline;
-}
-
-.forgot-password a:hover,
-.sign-your-org a:hover {
-  color: #2e3d49;
-  text-decoration: none;
 }
 
 button[type="submit"] {
@@ -144,51 +151,36 @@ button[type="submit"]:hover {
 
 .catalog{
   font-size: 35px;
-  /* font-weight: 300; */
   color: #06a865;
 }
 
-.course-heading{
+.course-heading a{
   font-size: 14px; 
   color: #7D97AD;
 }
 
 .course-title a{
-  font-weight: 500;
-  color: #2e3d49;
+  font-weight: 800;
   display: block;
   font-size: 20px;
-  /* line-height: 1.6rem;
-  max-height: 4.8rem; */
 }
 
 .course-title a:hover, a.program-details:hover{
-  text-decoration: none;
   color: #5ebc95;
 }
 
 .card-text{
-  color: #2e3d49;
   font-size: 14px;
   line-height: 1.7em;
 }
 
-.skills-covered{
+.skills-covered a{
   color: #767676;
-}
-
-.skills-covered-content, .skills-level{
-  color: #2e3d49;
 }
 
 .proficiency{
   position: absolute;
   left: 37px;
-}
-.tag-div{
-  /* position: relative;
-  right: 20px;
-  padding: 10px; */
 }
 
 .new-tag{
@@ -234,19 +226,7 @@ a.program-details{
   margin-top: -5px; 
 }
 
-  .horizontal-line{
-    /* position: relative;
-    top: -5px; */
-  }
-
-  /* .minus::before{
-   font-family: "Font Awesome 5 Free";
-   content: "\f068";
-   display: inline-block;
-   padding-right: 3px;
-   vertical-align: middle;
-} */
-
+ 
 a.program-details::before {
   font-family: "Font Awesome 5 Free";
   content: "\f055";
@@ -266,24 +246,24 @@ a.rotate-icon-plus::before{
   transform: rotate(180deg); 
 }
 
-i.fa-plus-circle{
-  /* transition: transform .5s ease ;
-  -webkit-transition: transform .5s ease, ;  */
+a.rotate-icon-minus::before{
+  font-family: "Font Awesome 5 Free";
+  content: "\f055";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  transform: rotate(180deg); 
 }
 
 .rotate-icon-minus{
-  color: red;
+  /* color: red;
   display: inline-block;
-  transform: rotate(-180deg); 
+  transform: rotate(-180deg);  */
 }
 
 
 .fas.fa-minus-circle{
   display: none;
-}
-
-.fas.fa-plus{
-  /* display: inline-block; */
 }
 
 .course-list-images img{
@@ -312,13 +292,6 @@ i.fa-plus-circle{
 }
 
 
-@media only screen and (max-width:600px){
-  /* .new-tag{
-    position: relative;
-    right: -45px;
-    color: red;
-  } */
-}
 
 @media only screen and (max-width: 767px){
   .course-list-images, .horizontal-content{
@@ -367,7 +340,7 @@ i.fa-plus-circle{
     font-size: 20px;
   }
 
-  .course-heading{
+  .course-heading a{
     letter-spacing: 0.3em;
     font-weight: 600;
     font-size: 15px;

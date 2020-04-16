@@ -27,14 +27,70 @@ $(document).ready(function () {
 
     function slideToggleIcons() {
         $('.program-details').click(function () {
-            // if ($(this).children('i.fa-plus-circle').is(':visible')) {
-                // $(this).children('i.fa-plus-circle').toggleClass('rotate-icon-plus');
-                    // if ($('i:not(.fa-plus)').is(':visible') == false) {
-                // $(this).children('i.fa-minus-circle').show()
+            // if ($('.accordion-divs').is(':hidden')) {
+            // if ($('.accordion-divs').is(':hidden')) {
+            $(this).toggleClass('rotate-icon-plus');
+            $('.rotate-icon-plus'). not(this).removeClass('rotate-icon-plus')
+                // console.log('hjbhgrgiu')
+                // if ($(this).next('.accordion-divs').is(':hidden')) {
+                    
+                    // if ($('.accordion-divs').is('.collapse:not(.show)')) {
+                    //     $('.program-details').toggleClass('rotate-icon-plus')
                     // }
-                // });
-                // alert('gdvh')
-            $(this).toggleClass('rotate-icon-plus')
+                // }
+                // else {
+                //     $(this).toggleClass('rotate-icon-plus')
+                // }    
+            // }
+            // else {
+            //     console.log('accordion-divs');
+            //     $('.accordion-divs').removeClass('rotate-icon-plus')
+                
+            // }   
+
+
+            // if ($('.accordion-divs').is('.collapse:not(.show)')) {
+            //     $(this).toggleClass('rotate-icon-plus')
+            // }
+
+            // if ($('.accordion-divs').is('.collapse:not(.show)')) {
+            //         $('.program-details').toggleClass('rotate-icon-plus')
+            //     }
+                // $('.program-details').toggleClass('rotate-icon-plus')
+            
+
+            // if (!$('.program-details').is(':focus')) {
+            //     $('.program-details').toggleClass('rotate-icon-plus')
+            // }
+            // else {
+            //         $(this).toggleClass('rotate-icon-plus')
+            // }
+                // if (!$('.program-details').is(':focus')) {
+                //     $('.program-details').toggleClass('rotate-icon-plus')
+                // }
+                
+            // }
+            // else {
+                // $(this).removeClass('rotate-icon-plus');
+                // $(this).addClass('rotate-icon-minus');
+            // }
+            // if ($('.accordion-divs').is(':visible')) {
+            //     $('.program-details').toggleClass('rotate-icon-minus');
+            // }
+
+            
+            // else {
+                
+            // }
+
+            
+
+            // if ($('.accordion-divs').is(':visible')) {
+            //     $('.program-details').toggleClass('rotate-icon-plus')
+            // }
+            // else {
+            //     $('.program-details').toggleClass('rotate-icon-plus');
+            // }
             // }
 
             // else  {

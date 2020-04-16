@@ -18,6 +18,9 @@ img {
 #NavBar ul {
     float: right;
 }
+.row:before, .row:after {
+    display: -webkit-flex;
+}
 .nav-link {
     margin: 0 !important;
 }
@@ -27,33 +30,16 @@ img {
 .clear {
     clear: both;
 }
-.bg2 {
-    width: 100%;
-    background-color: #D2F1E2;
-    padding: 0;
-    padding-bottom: 20px;
-    margin-bottom: 50px; 
-     
-}
-.bg1 {
-    width: 100%;
-    background-color: #1DBF73;
-    padding: 0;
-    padding-bottom: 20px;
-}
 .bg0 {
     width: 100%;
 /*    height: 774px;*/
-    background-image: url(../images/architecture-blue_1.jpg);
+    background-image: url(../images/header.png);
     background-size: cover;
-    background-color: #253A4A;
-    background-blend-mode: multiply;
-    background-position: center;
+    background-position: bottom;
     color: white;
     padding: 4% 7%;
-}
-.bgg {
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%)
+    padding-bottom: 0; 
+    margin-bottom: 3%;
 }
 form {
     margin-bottom: 100px; 
@@ -113,18 +99,16 @@ form {
     width: 100%;
     background-color: white;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
     box-shadow: 5px 5px 3px #BBB;
     margin: 2% 2% !important;
 /*    height: 200px;*/
 }
 .child05 img {
     width: 100%;
-    min-height: 100%;
 }
-.child05 div {
-    padding: 3% 2%;
+.child05 div:nth-child(2) {
+    padding: 2% 1%;
+    padding-right: 3%;
     text-align: left;
     font-size: 0.7em; 
 }
@@ -146,9 +130,6 @@ form {
 .ready {
     padding: 10%;
     background-color: #253A4A;
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
     color: white;
     margin: 10% 0;
 }
@@ -275,12 +256,17 @@ div.col-md-3 i {
 .make h5 {
     font-size: 1.5em;
 }
-.last {
-    padding: 13%;
-    text-align: center;
+h4.row {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
 }
-.last h4 {
-    padding: 4%;
+a.h5, div.h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.f_content {
+    font-size: 14px;
 }
 .f_content ul li {
     list-style: none;
@@ -293,8 +279,8 @@ div.col-md-3 i {
     color: white !important;
 }
 #accordion {
-    background-color: #343a40;
-    box-shadow: 5px 5px 3px #292f35;
+    background-color: #262727;
+    box-shadow: 5px 5px 3px #222;
     margin: auto;
     padding-left: 3%;
 }
@@ -322,12 +308,13 @@ a.h5 > i {
     float: right;
     margin-right: 3%;
 }
+footer > .container-fluid {
+    padding: 0;
+}
 footer {
-    text-align: center;
-    padding-left: 5% !important;
-    padding-right: 5% !important;
-    padding-top: 5%;
     background-color: #262727;
+    text-align: center;
+    padding-top: 5%;
     color: white;
     margin-top: 25px;
 }
@@ -340,7 +327,10 @@ footer {
     width: 90%;
 }
 #footer {
-    text-align: left;
+    text-align: center;
+}
+#footer > .row, footer .container-fluid > .row {
+    margin: 0 !important;
 }
 #footer ul li {
     display: inline;

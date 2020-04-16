@@ -6,20 +6,18 @@
     <title>All Courses</title>
 
     <!-- css -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
     <link rel="stylesheet" type="text/css" href="css/home_css/mobile_menu.css">
     <link rel="stylesheet" type="text/css" href="css/home_css/style.css">
     <link rel="stylesheet" type="text/css" href="css/home_css/responsive.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;0,900;1,100;1,900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap.min.css">
 
     <style>
-        html,body {
-            /* height: 100% */
-            font-family: "Open Sans", sans-serif;
-            /* background-color: #D2F1E2; */
+       body{
+            font-family: 'Raleway', sans-serif;
         }
 
         #menuToggle span{
@@ -27,13 +25,6 @@
         }
 
         @media only screen and (min-width: 820px) {
-            /* #Dnav {
-                display: none;
-            }
-            #Mnav {
-                display: block;
-            } */
-
             #NavBar ul li {
                 display: inline-block;
             }
@@ -134,7 +125,7 @@
                         <div class="row card-content pt-2">
                             <!-- image column here to be hidden on small screen -->
                             <div class="col-lg-2 col-xl-3 course-list-images">
-                                <img src="images/card_img1.jpg">
+                                <a href="#"><img src="images/card_img1.jpg"></a> 
                                 <!-- <div class="card-img-overlay">
                                     <img src="images/computer.png" alt="" style="width: 20px; height: 20px;">
                                 </div> -->
@@ -144,8 +135,8 @@
                             <div class="col-8 col-sm-9 col-md-10 col-lg-8 col-xl-7">
                                 <div class="row">
                                     <div class="col-12 card-title pt-1 mb-0">
-                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                        <span class="course-heading"> School of Programming </span>
+                                        <a href="#"> <img src="images/computer.png" alt="" style="width: 12px; height: 12px;"> </a> 
+                                        <span class="course-heading"> <a href="#">School of Programming</a>  </span>
                                     </div>
                                     <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
                                         <a href="#">Introduction To Programming</a>
@@ -153,15 +144,15 @@
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-8 col-sm-7 card-text">
-                                                <span class="skills-covered">Skills Covered</span> <br>
-                                                <span class="skills-covered-content">Introduction to <br> </span>
-                                                <span class="skills-covered-content"> Programming, HTML, CSS, </span>
+                                                <span class="skills-covered"> <a href="#">Skills Covered</a> </span> <br>
+                                                <span class="skills-covered-content"> <a href="#">Introduction to</a> <br> </span>
+                                                <span class="skills-covered-content"> <a href="#">Programming, HTML, CSS,</a> </span>
                                             </div>
                                             <div class="col-4 col-sm-5 my-3 above-skills-level">
                                                 <span class="skill-status">
-                                                    <img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;">
+                                                    <a href="#"><img src="images/beginner1.png" alt="" style="width: 17px; height: 17px;"></a>
                                                 </span>
-                                                <span class="proficiency">Beginner</span>
+                                                <span class="proficiency"> <a href="#">Beginner</a> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -185,7 +176,7 @@
                                 <a href="#collapsible-text1" class="program-details" data-toggle="collapse">
                                     Program Details
                                 </a>
-                                <div id="collapsible-text1" class="collapse" data-parent="#accordion-cards">
+                                <div id="collapsible-text1" class="collapse accordion-divs" data-parent="#accordion-cards">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -214,15 +205,15 @@
                         <div class="row card-content pt-2">
                             <!-- image column here to be hidden on small screen -->
                             <div class="col-lg-2 col-xl-3 course-list-images">
-                                <img src="images/real_world_project.jpg">
+                               <a href="#"><img src="images/card_img2.jpg"></a> 
                             </div>
                     
                             <!-- second content column -->
                             <div class="col-8 col-sm-9 col-md-10 col-lg-8 col-xl-7">
                                 <div class="row">
                                     <div class="col-12 card-title pt-1 mb-0">
-                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                        <span class="course-heading"> School of Programming </span>
+                                        <a href="#"><img src="images/computer.png" alt="" style="width: 12px; height: 12px;"></a>
+                                        <span class="course-heading"> <a href="#">School of Programming</a> </span>
                                     </div>
                                     <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
                                         <a href="#">Front End Web Developer</a>
@@ -230,15 +221,15 @@
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-8 col-sm-7 card-text">
-                                                <span class="skills-covered">Skills Covered</span> <br>
-                                                <span class="skills-covered-content">JavaScript, HTML, CSS, <br> </span>
-                                                <span class="skills-covered-content"> Webpack, Flexbox </span>
+                                                <span class="skills-covered"> <a href="#">Skills Covered</a> </span> <br>
+                                                <span class="skills-covered-content"> <a href="#">JavaScript, HTML, CSS,</a> <br> </span>
+                                                <span class="skills-covered-content"> <a href="#">Webpack, Flexbox</a>  </span>
                                             </div>
                                             <div class="col-4 col-sm-5 my-3 above-skills-level">
                                                 <span class="skill-status">
-                                                    <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                                    <a href="#"><img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;"></a>
                                                 </span>
-                                                <span class="proficiency">Intermediate</span>
+                                                <span class="proficiency"> <a href="#">Intermediate</a> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -263,7 +254,7 @@
             
                                     Program Details
                                 </a>
-                                <div id="collapsible-text2" class="collapse" data-parent="#accordion-cards">
+                                <div id="collapsible-text2" class="collapse accordion-divs" data-parent="#accordion-cards">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -293,15 +284,15 @@
                         <div class="row card-content pt-2">
                             <!-- image column here to be hidden on small screen -->
                             <div class="col-lg-2 col-xl-3 course-list-images">
-                                <img src="images/real_world_project.jpg">
+                                <a href="#"><img src="images/card_img3.jpg"></a>
                             </div>
                     
                             <!-- second content column -->
                             <div class="col-8 col-sm-9 col-md-10 col-lg-8 col-xl-7">
                                 <div class="row">
                                     <div class="col-12 card-title pt-1 mb-0">
-                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                        <span class="course-heading"> School of Programming </span>
+                                        <a href="#"><img src="images/computer.png" alt="" style="width: 12px; height: 12px;"></a>
+                                        <span class="course-heading"> <a href="#">School of Programming</a>  </span>
                                     </div>
                                     <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
                                         <a href="#">Full Stack Web Developer</a>
@@ -309,15 +300,15 @@
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-8 col-sm-7 card-text">
-                                                <span class="skills-covered">Skills Covered</span> <br>
-                                                <span class="skills-covered-content">Python, JavaScript, <br> </span>
-                                                <span class="skills-covered-content"> PostgreSQL, Flask </span>
+                                                <span class="skills-covered"> <a href="#">Skills Covered</a> </span> <br>
+                                                <span class="skills-covered-content"> <a href="#">Python, JavaScript,</a>  <br> </span>
+                                                <span class="skills-covered-content"> <a href="#">PostgreSQL, Flask</a> </span>
                                             </div>
                                             <div class="col-4 col-sm-5 my-3 above-skills-level">
                                                 <span class="skill-status">
-                                                    <img src="images/expert1.png" alt="" style="width: 17px; height: 17px;">
+                                                    <a href="#"><img src="images/expert1.png" alt="" style="width: 17px; height: 17px;"></a>
                                                 </span>
-                                                <span class="proficiency">Advanced</span>
+                                                <span class="proficiency"> <a href="#">Advanced</a></span>
                                             </div>
                                         </div>
                                     </div>
@@ -342,7 +333,7 @@
             
                                     Program Details
                                 </a>
-                                <div id="collapsible-text3" class="collapse" data-parent="#accordion-cards">
+                                <div id="collapsible-text3" class="collapse accordion-divs" data-parent="#accordion-cards">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -371,15 +362,15 @@
                         <div class="row card-content pt-2">
                             <!-- image column here to be hidden on small screen -->
                             <div class="col-lg-2 col-xl-3 course-list-images">
-                                <img src="images/real_world_project.jpg">
+                                <a href="#"><img src="images/card_img4.jpg"></a>
                             </div>
                     
                             <!-- second content column -->
                             <div class="col-8 col-sm-9 col-md-10 col-lg-8 col-xl-7">
                                 <div class="row">
                                     <div class="col-12 card-title pt-1 mb-0">
-                                        <img src="images/computer.png" alt="" style="width: 12px; height: 12px;">
-                                        <span class="course-heading"> School of Programming </span>
+                                        <a href="#"><img src="images/computer.png" alt="" style="width: 12px; height: 12px;"></a>
+                                        <span class="course-heading"> <a href="#">School of Programming</a>  </span>
                                     </div>
                                     <div class="col-12 course-title mb-2" style="line-height: 1.8rem">
                                         <a href="#">Java Developer</a>
@@ -387,15 +378,15 @@
                                     <div class="col-12">
                                         <div class="row">
                                             <div class="col-8 col-sm-7 card-text">
-                                                <span class="skills-covered">Skills Covered</span> <br>
-                                                <span class="skills-covered-content">Java, Spring Boot, Rest CSS, <br> </span>
-                                                <span class="skills-covered-content">Api, MySql, MongoDB </span>
+                                                <span class="skills-covered"> <a href="#">Skills Covered</a> </span> <br>
+                                                <span class="skills-covered-content"> <a href="#">Java, Spring Boot, Rest CSS,</a>  <br> </span>
+                                                <span class="skills-covered-content"> <a href="#">Api, MySql, MongoDB</a> </span>
                                             </div>
                                             <div class="col-4 col-sm-5 my-3 above-skills-level">
                                                 <span class="skill-status">
-                                                    <img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;">
+                                                    <a href="#"><img src="images/intermediate1.png" alt="" style="width: 17px; height: 17px;"></a>
                                                 </span>
-                                                <span class="proficiency">Intermediate</span>
+                                                <span class="proficiency"> <a href="#">Intermediate</a> </span>
                                             </div>
                                         </div>
                                     </div>
@@ -420,7 +411,7 @@
             
                                     Program Details
                                 </a>
-                                <div id="collapsible-text4" class="collapse" data-parent="#accordion-cards">
+                                <div id="collapsible-text4" class="collapse accordion-divs" data-parent="#accordion-cards">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -444,43 +435,27 @@
         </div>
                 
         
-
-        <!-- <div class="row">
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-        </div>
-        <div class="row">
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-        </div>
-        <div class="row">
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-            <div class="col-12"></div>
-        </div> -->
         
     </div>
 
     <i class="far fa-comment-dots" id="chat"></i>
-    <footer class="bg-dark padding">
+    <footer class="padding">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 f_content">
-                    <img src="images/lodo.png" class="logo"><br>
+                <div class="col-md-2 f_content">
+                    <img src="images/copy.png" class="logo"><br>
                     <p>...your stack companion</p>
                 </div>
-                <div class="col-md-9 justify-content-center text-left">
-                    <div class=" row d-md-flex w-100" id="">
-                        <div class="col-md-5 px-0 col-lg-3 f_content">
+                <div class="col-md-10 justify-content-center text-left">
+                    <div class="accordion row d-md-flex w-100" id="accordion">
+                        <div class="col-md-6 px-0 col-lg-3 f_content">
                             <a href="#company" data-toggle="collapse"
-                                class="h5 nav-link text-white px-0 d-block d-md-none">Company<i
+                                class="h5 nav-link text-white px-0 d-block d-md-none">COMPANY<i
                                     class="fas fa-angle-down"></i></a>
                             <div class="h5 text-white d-none d-md-block">
-                                Company
+                                COMPANY
                             </div>
-                            <div class="collapse d-md-flex" id="company" data-parent="#">
+                            <div class="collapse d-md-flex" id="company" data-parent="#accordion">
                                 <ul>
                                     <li><a href="">About</a></li>
                                     <li><a href="">Blog</a></li>
@@ -489,31 +464,48 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-7 px-0 col-lg-5 f_content">
+                        <div class="col-md-6 px-0 col-lg-4 f_content">
                             <a href="#USchools" data-toggle="collapse"
-                                class="h5 nav-link text-white px-0 d-block d-md-none">Ustacky Schools <i
+                                class="h5 nav-link text-white px-0 d-block d-md-none">USTACKY PROGRAMS <i
                                     class="fas fa-angle-down"></i></a>
                             <div class="h5 text-white d-none d-md-block">
-                                Ustacky Faculty
+                                USTACKY PROGRAMS
                             </div>
-                            <div class="collapse d-md-flex" id="USchools" data-parent="#">
+                            <div class="collapse d-md-flex" id="USchools" data-parent="#accordion">
                                 <ul>
-                                    <li><a href="">Faculty of Programming</a></li>
+                                    <li><a href="">FrontEnd Developer Course</a></li>
+                                    <li><a href="">BackEnd Developer Course</a></li>
+                                    <li><a href="">Full Stack Developer Course</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6 px-0 col-lg-4 f_content">
+                        <div class="col-md-6 px-0 col-lg-3 f_content">
                             <a href="#Support" data-toggle="collapse"
-                                class="h5 nav-link text-white px-0 d-block d-md-none">Supports <i
+                                class="h5 nav-link text-white px-0 d-block d-md-none">SUPPORTS <i
                                     class="fas fa-angle-down"></i></a>
                             <div class="h5 text-white d-none d-md-block">
-                                Supports
+                                SUPPORTS
                             </div>
-                            <div class="collapse d-md-flex" id="Support" data-parent="#">
+                            <div class="collapse d-md-flex" id="Support" data-parent="#accordion">
                                 <ul>
                                     <li><a href="">Contact Us</a></li>
                                     <li><a href="">Help and FAQ</a></li>
-    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 px-0 col-lg-2 f_content">
+                            <a href="#follow" data-toggle="collapse"
+                                class="h5 nav-link text-white px-0 d-block d-md-none">FOLLOW US<i
+                                    class="fas fa-angle-down"></i></a>
+                            <div class="h5 text-white d-none d-md-block">
+                                FOLLOW US
+                            </div>
+                            <div class="collapse follow d-md-flex" id="follow" data-parent="#accordion">
+                                <ul>
+                                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -525,7 +517,7 @@
         <hr>
         <div id="footer">
             <div class="row">
-                <div class="col-md-12 col-lg-8 px-0 py-2 text-center">
+                <div class="col-md-10 px-0 py-2">
                     <ul>
                         <li><a href="">&copy;2011-2019 Ustacky Inc.</a></li>
                         <li><a href="">Legal &amp; Privacy</a></li>
@@ -533,15 +525,7 @@
                         <li><a href="">Site Map</a></li>
                     </ul>
                 </div>
-                <div class="col-md-6 col-lg-2 px-0 py-2 f_content follow text-center">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-6 col-lg-2 px-0 py-2 text-center" id="eng">
+                <div class="col-md-2 px-0 py-2 text-center" id="eng">
                     <a href="">ENG <i class="fas fa-angle-down"></i></a>
                 </div>
             </div>

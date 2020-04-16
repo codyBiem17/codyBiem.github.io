@@ -1,27 +1,18 @@
 @media screen and (min-width : 480px) {
 	.bg0 {
 	    width: 100%;
-	/*    height: 774px;*/
-	    background-image: url(../images/architecture-blue_1.jpg);
-	    background-size: cover;
-	    background-color: #253A4A;
-	    background-blend-mode: multiply;
-	    background-position: center;
 	    color: white;
 	    padding: 2% 5%;
+	    padding-bottom: 0;
 	}
 	.check {
 		margin: 10px 30px;
 	}
 	#topcenter h1 {
-    font-size: 2.5rem;
-    font-weight: 400;
-    letter-spacing: 2px;
-    word-spacing: 3px;
-}
-	.child05 img {
-	    width: 100%;
-	    min-height: auto;
+	    font-size: 2.5rem;
+	    font-weight: 400;
+	    letter-spacing: 2px;
+	    word-spacing: 3px;
 	}
 	.active {
 		display: none !important;
@@ -35,9 +26,6 @@
 	.ready {
 	    padding: 5% 10%;
 	    background-color: #253A4A;
-	    background-blend-mode: multiply;
-	    background-size: cover;
-	    background-position: center;
 	    color: white;
 	    margin: 5% 0;
 	}
@@ -101,9 +89,6 @@
 	.last h4 {
 	    padding: 0;
 	}
-	#NavBar {
-		margin: 10px 0;
-	}
 	.nav-link {
 		margin: 0;
 	}
@@ -113,23 +98,15 @@
 		display: none;
 	}
 	#Dnav {
-		display: grid;
-		grid-template-columns: auto auto;
+		display: block;
 		padding: 0;
 		margin: 0;
 	}
 	#topcenter {
 		margin-left: 3%;
 	}
-	#NavBar {
-		margin: 5px 0;
-	}
 	.nav-link {
 		margin: 0;
-	}
-	.child05 img {
-	    width: 100%;
-	    min-height: 100%;
 	}
 }
 @media screen and (min-width: 970px) {
@@ -153,5 +130,14 @@
 @media screen and (min-width: 768px) {
 	.accordion {
 		box-shadow: none !important;
+	}
+	footer {
+		text-align: left;
+	}
+	#footer {
+		text-align: left;
+	}
+	.f_content {
+		padding: 0;
 	}
 }
