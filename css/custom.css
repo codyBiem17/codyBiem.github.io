@@ -276,7 +276,7 @@ a.rotate-icon-minus::before{
 }
 
 .course-list-images img:hover{
-  opacity: 1;
+  /* opacity: 1; */
 }
 
 /* add this class to navbar on course list page */
