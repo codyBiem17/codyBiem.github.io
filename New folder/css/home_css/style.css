@@ -1,0 +1,362 @@
+body {
+    font-family: raleway;
+    background-color: #FBFBFB;
+    box-sizing: border-box;
+}
+img {
+    width: 120px;
+}
+#Dnav {
+    display: none;
+}
+#Mnav {
+    display: block;
+}
+#NavBar ul li {
+    display: inline;
+}
+#NavBar ul {
+    float: right;
+}
+.row:before, .row:after {
+    display: -webkit-flex;
+}
+.nav-link {
+    margin: 0 !important;
+}
+.nav-link:hover {
+    color: #1DBF73 !important;
+}
+.clear {
+    clear: both;
+}
+.bg0 {
+    width: 100%;
+/*    height: 774px;*/
+    background-image: url(../images/header.png);
+    background-size: cover;
+    background-position: bottom;
+    color: white;
+    padding: 4% 7%;
+    padding-bottom: 0; 
+    margin-bottom: 3%;
+}
+form {
+    margin-bottom: 100px; 
+}
+#started {
+    background-color: #1DBF73;
+    color: white !important;
+    border-radius: 20px;
+    padding: 10px 25px;
+    text-align: center;
+}
+#started:hover {
+    background-color: white;
+    color: #1DBF73 !important;
+    border-radius: 20px;
+    padding: 10px 25px;
+    border: 1px solid #1DBF73;
+    text-align: center;
+}
+.check {
+    background-color: #1DBF73;
+    padding: 10px 0px;
+    width: 60%;
+    border-radius: 0;
+    font-weight: 700;
+    margin: 10px 20%;
+    border: none;
+    text-align: center;
+    color: white;
+}
+.check:hover {
+    background-color: white;
+    color: #1DBF73;
+    border: 1px solid #1DBF73;
+}
+#topcenter {
+    margin-top: 10%;
+    margin-bottom: 25%;
+}
+#topcenter h1 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+.h5 {
+    font-size: 1.25rem !important;
+}
+/*.padding {
+    margin: 5%;
+}
+*/
+.card01 {
+    margin: 2% 5%; 
+}
+.child05 {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+    box-shadow: 5px 5px 3px #BBB;
+    margin: 2% 2% !important;
+/*    height: 200px;*/
+}
+.child05 img {
+    width: 100%;
+}
+.child05 div:nth-child(2) {
+    padding: 2% 1%;
+    padding-right: 3%;
+    text-align: left;
+    font-size: 0.7em; 
+}
+.child05 div h5 {
+    font-size: 1.3em; 
+}
+.child05 div a {
+    text-decoration: none;
+    color: #1DBF73;
+    font-size: 1.3em;
+    font-weight: 300;
+    padding-bottom: 3px;
+}
+.child05 div a:hover {
+    text-decoration: underline;
+    color: black;
+    padding-bottom: 10px;
+}
+.ready {
+    padding: 10%;
+    background-color: #253A4A;
+    color: white;
+    margin: 10% 0;
+}
+.ready a.btn {
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-color: #1DBF73;
+    border: none;
+    color: white;
+}
+.ready a.btn:hover {
+    padding: 10px 40px;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px #1DBF73 solid;
+    color: #1DBF73;
+}
+.ready h3 {
+    font-weight: 700;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+    word-spacing: 3px;  
+}
+.card {
+    border: none;
+    box-shadow: 5px 5px 3px #999;
+    width: 100%;
+}
+.fab {
+    font-size: 70px;
+    margin: 10px;
+}
+.fa-css3 {
+    color: #002561;
+}
+.fa-python {
+    color: #ffde57;
+}
+.fa-html5 {
+    color: #e34f26;
+}
+.fa-php {
+    color: #99cc99;
+}
+a.myCard {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 700;
+}
+a.myCard:hover {
+    background-color: #1DBF73;
+    color: white !important;
+    text-decoration: none;
+    padding: 2%;
+    font-weight: 700
+}
+.join {
+    width: 100%;
+    height: 35px;
+    color: white;
+    background-color: #1DBF73;
+    grid-column: 1/3;
+    border: none;
+    padding: 10px auto;
+    }
+div.col-md-3 i {
+    font-size: 35px;
+    color: #1DBF73;
+    font-weight: 20%;
+}
+.no_m {
+    display: none;
+}
+.link {
+    text-align: center;
+    background-color: #1DBF73;
+    border-radius: 40px;
+    border: none;
+    padding: 10px 60px;
+    margin: 2%;
+    color: white;
+}
+.link:hover {
+    text-align: center;
+    background-color: white;
+    color: #1DBF73;
+    border-radius: 40px;
+    border: 1px #1DBF73 solid;
+}
+.links {
+    background-color: white;
+    color: #1DBF73;
+    padding: 10px 40px;
+    border-radius: 40px;
+    border: none;
+    margin: 2%;
+}
+.links:hover {
+    background-color: #1DBF73;
+    border: 1px solid white;
+    color: white;
+}
+.col-md-3 {
+    margin-bottom: 3%;
+}
+.col-md-8 video {
+    display: block;
+}
+.top09 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.padding {
+    padding: 2% 10%;
+}
+.make {
+    background-color: #1DBF73;
+    text-align: center;
+    padding: 13%;
+    color: white;
+}
+.make h5 {
+    font-size: 1.5em;
+}
+h4.row {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+a.h5, div.h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.f_content {
+    font-size: 14px;
+}
+.f_content ul li {
+    list-style: none;
+}
+.f_content > a.nav-link {
+    padding: 2% auto;
+}
+.f_content > a.nav-link:hover {
+    padding: 2% auto;
+    color: white !important;
+}
+#accordion {
+    background-color: #262727;
+    box-shadow: 5px 5px 3px #222;
+    margin: auto;
+    padding-left: 3%;
+}
+footer ul {
+    padding: 0;
+}
+footer a {
+    text-decoration: none;
+    color: #d9d9d9;
+    text-align: left;
+}
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}
+.follow ul li {
+    display: inline;
+    margin: 2px;
+}
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-twitter {
+    font-size: 20px;
+    margin: 2px;
+}
+a.h5 > i {
+    float: right;
+    margin-right: 3%;
+}
+footer > .container-fluid {
+    padding: 0;
+}
+footer {
+    background-color: #262727;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    margin-top: 25px;
+}
+#eng a {
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 15px;
+    margin-right: inherit;
+    margin-bottom: 4px;
+    width: 90%;
+}
+#footer {
+    text-align: center;
+}
+#footer > .row, footer .container-fluid > .row {
+    margin: 0 !important;
+}
+#footer ul li {
+    display: inline;
+    text-align: left;
+    margin: 5px;
+}
+#footer ul {
+    margin: 0;
+    padding: 0;
+}
+#chat {
+    display: none;
+    font-size: 30px;
+    float: right;
+    padding: 7px;
+    background-color: #1DBF73;
+    color: white;
+    border-radius: 100%;
+    margin-right: 7%;
+}
+#chat:hover {
+    font-size: 30px;
+    float: right;
+    padding: 7px;
+    background-color: white;
+    color: #1DBF73;
+    border-radius: 100%;
+    margin-right: 7%;
+}

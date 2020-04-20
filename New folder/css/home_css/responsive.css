@@ -1,0 +1,143 @@
+@media screen and (min-width : 480px) {
+	.bg0 {
+	    width: 100%;
+	    color: white;
+	    padding: 2% 5%;
+	    padding-bottom: 0;
+	}
+	.check {
+		margin: 10px 30px;
+	}
+	#topcenter h1 {
+	    font-size: 2.5rem;
+	    font-weight: 400;
+	    letter-spacing: 2px;
+	    word-spacing: 3px;
+	}
+	.active {
+		display: none !important;
+	}
+	.make {
+	    background-color: #1DBF73;
+	    text-align: center;
+	    padding: 5%;
+	    color: white;
+	}
+	.ready {
+	    padding: 5% 10%;
+	    background-color: #253A4A;
+	    color: white;
+	    margin: 5% 0;
+	}
+	.no_m {
+		display: block;
+	}
+	#topcenter {
+		padding-left: 5%;
+	}
+	.px-5 a {
+    display: inline-block;
+	}
+	
+	.nav-link {
+		margin: 2px;
+		color: white;
+		display: inline;
+		font-size: 0.8em;
+	}
+	#chat {
+        display: inline-block;
+	}
+	.px-5 {
+	    text-align: left;
+	    display: grid;
+		grid-template-columns: 3fr 2fr;
+	}
+	.px-5 a {
+	    display: inline-block;
+	    margin: auto 2%;
+	    transform: translateY(50%);
+	}
+	#chat {
+		display: inline-block;
+	}
+}
+@media screen and (min-width: 570px) {
+	#topcenter h1 {
+		font-size: 3rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	#topcenter h1 {
+		font-size: 4rem;
+	}
+}
+@media screen and (min-width : 750px) {
+	.last {
+	    padding: 5%;
+	    text-align: left;
+	}
+	.bordered {
+	    border-right: 1px solid black;
+	}
+	#last {
+	    border: none;
+	}
+	.padding {
+		padding: 2% 7%;
+	}
+	.last h4 {
+	    padding: 0;
+	}
+	.nav-link {
+		margin: 0;
+	}
+}
+@media screen and (min-width : 820px) {
+	#Mnav {
+		display: none;
+	}
+	#Dnav {
+		display: block;
+		padding: 0;
+		margin: 0;
+	}
+	#topcenter {
+		margin-left: 3%;
+	}
+	.nav-link {
+		margin: 0;
+	}
+}
+@media screen and (min-width: 970px) {
+	.active {
+		display: inline-block !important;
+	}
+	#topcenter {
+		padding-left: 12%;
+	}
+	.make {
+		padding: 5%;
+		text-align: left;
+	}
+	.child05 div h5 {
+		font-size: 1rem
+	}
+	.child05 div p {
+		font-size: 0.8rem;
+	}
+}
+@media screen and (min-width: 768px) {
+	.accordion {
+		box-shadow: none !important;
+	}
+	footer {
+		text-align: left;
+	}
+	#footer {
+		text-align: left;
+	}
+	.f_content {
+		padding: 0;
+	}
+}
