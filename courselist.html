@@ -170,7 +170,7 @@
                         <div class="row">
                     
                             <div class="col-9 collapsible-skills-content">
-                                <a href="#collapsible-text1" class="program-details" data-toggle="collapse">
+                                <a onclick="slideToggleIcons(this)"  href="#collapsible-text1" class="program-details" data-toggle="collapse">
                                     Program Details
                                 </a>
                                 <div id="collapsible-text1" class="collapse accordion-divs" data-parent="#accordion-cards">
@@ -247,7 +247,7 @@
                         <div class="row">
                     
                             <div class="col-9 collapsible-skills-content">
-                                <a href="#collapsible-text2" class="program-details" data-toggle="collapse">
+                                <a onclick="slideToggleIcons(this)"  href="#collapsible-text2" class="program-details" data-toggle="collapse">
             
                                     Program Details
                                 </a>
@@ -326,7 +326,7 @@
                         <div class="row">
                     
                             <div class="col-9 collapsible-skills-content">
-                                <a href="#collapsible-text3" class="program-details" data-toggle="collapse">
+                                <a onclick="slideToggleIcons(this)"  href="#collapsible-text3" class="program-details" data-toggle="collapse">
             
                                     Program Details
                                 </a>
@@ -404,7 +404,7 @@
                         <div class="row">
                     
                             <div class="col-9 collapsible-skills-content">
-                                <a href="#collapsible-text4" class="program-details" data-toggle="collapse">
+                                <a onclick="slideToggleIcons(this)"  href="#collapsible-text4" class="program-details" data-toggle="collapse">
             
                                     Program Details
                                 </a>
@@ -534,5 +534,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrapjs/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a2488c675b.js" crossorigin="anonymous"></script>
+    <script>
+        function slideToggleIcons(el) {
+        
+         
+
+         let hashId = $(el)[0].hash
+  
+         $(hashId).on('shown.bs.collapse', function () {
+             $(el).addClass('rotate-icon-plus')
+         })
+
+         $(hashId).on('hidden.bs.collapse', function () {
+             $(el).removeClass('rotate-icon-plus')
+
+         })
+
+       
+ }
+ </script>
 </body>
 </html>
